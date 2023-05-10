@@ -9,7 +9,7 @@ import sys   # インタプリタや実行環境を管理・操作するため�
 import pyperclip   # クリップボードに文字列をコピーしたり、クリップボードの文字列を取得することができるライブラリ
 import os
 
-os.getenv("TEST", "defaultvalue")
+os.environ['DISPLAY'] = ':0'
 
 # 前準備----------------------------------------------------------------
 today = datetime.date.today()   # 今日の日付を取得
