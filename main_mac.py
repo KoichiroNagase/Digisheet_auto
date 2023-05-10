@@ -7,6 +7,9 @@ import webbrowser
 import pyautogui   # GUI自動化ライブラリ
 import sys   # インタプリタや実行環境を管理・操作するための標準ライブラリ
 import pyperclip   # クリップボードに文字列をコピーしたり、クリップボードの文字列を取得することができるライブラリ
+import os
+
+value = os.getenv("TEST", "defaultvalue")
 
 # 前準備----------------------------------------------------------------
 today = datetime.date.today()   # 今日の日付を取得
